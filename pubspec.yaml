@@ -3,16 +3,16 @@ description: A new Flutter package project.
 version: 0.5.2
 
 environment:
-  sdk: ">=2.19.3 <4.0.0"
-  flutter: ">=1.17.0"
+  sdk: ">=3.0.0 <4.0.0"
+  flutter: ">=3.29.2"
 
 dependencies:
   flutter:
     sdk: flutter
-  agora_rtc_engine: 6.2.2
+  agora_rtc_engine: ^6.5.2
 
 dev_dependencies:
-  flutter_lints: ^2.0.0
+  flutter_lints: ^5.0.0
   flutter_test:
     sdk: flutter
 

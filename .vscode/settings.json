@@ -1,52 +1,43 @@
 {
-    ///
-    /// Dart Extension
-    ///
-    "dart.flutterSdkPath": ".fvm/flutter_sdk",
-    "dart.debugSdkLibraries": true,
-    "dart.lineLength": 150,
-    "dart.previewFlutterUiGuides": true,
-    "dart.analysisExcludedFolders": [
-        ".dart_tool",
-        ".fvm",
-        ".idea",
-        ".vscode",
-        "android",
-        "assets",
-        "build",
-        "ios",
+  "dart.flutterSdkPath": ".fvm/versions/3.29.2",
+  "dart.debugSdkLibraries": true,
+  "dart.lineLength": 150,
+  "dart.previewFlutterUiGuides": true,
+  "dart.analysisExcludedFolders": [
+    ".dart_tool",
+    ".fvm",
+    ".idea",
+    ".vscode",
+    "android",
+    "assets",
+    "build",
+    "ios"
+  ],
+  "search.exclude": {
+    "**/.fvm": true
+  },
+  "files.watcherExclude": {
+    "**/.fvm": true
+  },
+  "[dart]": {
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "editor.rulers": [
+      150
     ],
-    ///
-    /// VS Code
-    ///
-    "search.exclude": {
-        "**/.fvm": true
-    },
-    "files.watcherExclude": {
-        "**/.fvm": true
-    },
-    "[dart]": {
-        "editor.formatOnSave": true,
-        "editor.formatOnType": true,
-        "editor.rulers": [
-            150
-        ],
-        "editor.selectionHighlight": true,
-        "editor.suggest.snippetsPreventQuickSuggestions": false,
-        "editor.suggestSelection": "first",
-        "editor.tabCompletion": "onlySnippets",
-        "editor.wordBasedSuggestions": "off",
-        "editor.codeActionsOnSave": {
-            "source.fixAll": "explicit",
-            "source.organizeImports": "explicit"
-        }
-    },
-    ///
-    /// Dart Class Generator Extension
-    ///
-    "dart_data_class_generator.constructor.default_values": true,
-    "dart_data_class_generator.fromMap.default_values": true,
-    "dart_data_class_generator.useEquatable": true,
-    "dart_data_class_generator.fromJson.enabled": false,
-    "dart_data_class_generator.toJson.enabled": false,
+    "editor.selectionHighlight": true,
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    "editor.suggestSelection": "first",
+    "editor.tabCompletion": "onlySnippets",
+    "editor.wordBasedSuggestions": "off",
+    "editor.codeActionsOnSave": {
+      "source.fixAll": "explicit",
+      "source.organizeImports": "explicit"
+    }
+  },
+  "dart_data_class_generator.constructor.default_values": true,
+  "dart_data_class_generator.fromMap.default_values": true,
+  "dart_data_class_generator.useEquatable": true,
+  "dart_data_class_generator.fromJson.enabled": false,
+  "dart_data_class_generator.toJson.enabled": false
 }
