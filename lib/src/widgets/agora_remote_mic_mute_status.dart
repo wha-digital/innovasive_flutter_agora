@@ -1,10 +1,10 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
-import 'package:innovasive_flutter_agora/src/agora_controller.dart';
-import 'package:innovasive_flutter_agora/src/utils/condition_render.dart';
 
+import '../agora_controller.dart';
 import '../models/agora_controller_state_model.dart';
+import '../utils/condition_render.dart';
 
 class AgoraRemoteMicMuteStatus extends StatelessWidget {
   const AgoraRemoteMicMuteStatus({
@@ -82,7 +82,7 @@ class AgoraRemoteMicMuteStatus extends StatelessWidget {
                           filter: ImageFilter.blur(sigmaX: useBlurEffect ? sigmaX : 0, sigmaY: useBlurEffect ? sigmaY : 0),
                           child: Container(
                             width: contentWidth,
-                            color: (bgColor ?? Colors.black).withOpacity(opacity),
+                            color: (bgColor ?? Colors.black).withValues(alpha: opacity),
                             height: height,
                           ),
                         ),

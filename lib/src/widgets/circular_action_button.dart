@@ -46,7 +46,7 @@ class CircularActionButton extends StatelessWidget {
                 child: BackdropFilter(
                   filter: ImageFilter.blur(sigmaX: useBlurEffect ? sigmaX : 0, sigmaY: useBlurEffect ? sigmaY : 0),
                   child: Container(
-                    color: (bgColor ?? Colors.black).withOpacity(opacity ?? 0.4),
+                    color: (bgColor ?? Colors.black).withValues(alpha: opacity ?? 0.4),
                   ),
                 ),
               ),

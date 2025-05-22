@@ -1,14 +1,14 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
-import 'package:innovasive_flutter_agora/src/agora_controller.dart';
-import 'package:innovasive_flutter_agora/src/utils/condition_render.dart';
 
+import '../agora_controller.dart';
 import '../models/agora_controller_state_model.dart';
+import '../utils/condition_render.dart';
 
 class AgoraNameAndDurationBar extends StatelessWidget {
   const AgoraNameAndDurationBar({
-    Key? key,
+    super.key,
     required this.controller,
     required this.name,
     this.nameTextStyle,
@@ -29,7 +29,7 @@ class AgoraNameAndDurationBar extends StatelessWidget {
     this.margin = const EdgeInsets.fromLTRB(16, 16, 16, 16),
     this.height = 36,
     this.borderRadius = 12.0,
-  }) : super(key: key);
+  });
 
   final AgoraController controller;
   final String name;
@@ -74,7 +74,7 @@ class AgoraNameAndDurationBar extends StatelessWidget {
                     filter: ImageFilter.blur(sigmaX: useBlurEffect ? sigmaX : 0, sigmaY: useBlurEffect ? sigmaY : 0),
                     child: Container(
                       decoration: BoxDecoration(
-                        color: (bgColor ?? Colors.black).withOpacity(opacity),
+                        color: (bgColor ?? Colors.black).withValues(alpha: opacity),
                       ),
                     ),
                   ),

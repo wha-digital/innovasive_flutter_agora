@@ -37,9 +37,9 @@ class AgoraDisabledRemoteVideoView extends StatelessWidget {
   Widget build(BuildContext context) {
     Color? color() {
       if (gradient != null) return null;
-      if (bgColor != null) return bgColor!.withOpacity(colorOpacity);
+      if (bgColor != null) return bgColor!.withValues(alpha: colorOpacity);
 
-      return Colors.black.withOpacity(colorOpacity);
+      return Colors.black.withValues(alpha: colorOpacity);
     }
 
     return Stack(
